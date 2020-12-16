@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 ul{
     margin: 0;
@@ -9,12 +10,45 @@ ul{
 a{
     text-decoration: none;
 }
-.first{
-    color:LightSeaGreen;
+.symbol-open{
+    color:GoldenRod;
 }
-.second{
-    color:LightSeaGreen;
+.symbol-close{
+    color:GoldenRod;
 }
-.third{
-    color:Orange;
+.number{
+    color:Moccasin;
+}
+/* LAYOUT*/
+
+.navbar{
+    background-color:#333;
+    font-size:20px;
+}
+.fix{
+    clear:both;
+}
+.navbar>ul{
+   /*border:2px solid #fff;*/
+    margin-right:20px;
+}
+.navbar>ul.branding{
+    margin-left:50px;
+    margin-right:50px;
+}
+.navbar>ul.branding,
+.navbar>ul.main{
+    float:left;
+}
+.navbar>ul.client{
+    float:right;
+    margin-right:50px;
+}
+.navbar>ul>li{
+   /* border:2px solid orange;*/
+    float:left;
+    padding:20px 10px;;
+}
+.navbar>ul>li>a{
+    color:white;
 }
