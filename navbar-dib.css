@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color:#333;
+}
+
+.navbar a{
+    color:white;
+}
+
+.navbar>ul{
+    /* border:2px solid #fff;*/
+     /*margin-right:20px;*/
+     display:inline-block;
+     vertical-align:middle;
+}
+
+ .navbar>ul>li{
+    /*border:2px solid orange;*/
+    display:inline-block;
+    vertical-align:middle;
+    padding: 0.5em 0.5em;
+ }
+
+ .navbar>ul.branding{
+    margin-left:1em;
+    margin-right:1em;
+}
+
+.navbar>ul.branding li:first-child{
+    font-size: 2em;
+}
+
+.navbar>ul.client{
+    /*margin-left:620px;*/
+    margin-left:50em;/*aici depinde de dimensiunea ecranului*/
+}
