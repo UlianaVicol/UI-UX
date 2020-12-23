@@ -1,0 +1,144 @@
+body {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.contacts li{
+    display:table;
+    padding: .25em;
+} 
+.contacts li > *{
+    display:table-cell;
+    vertical-align:middle;
+    transition:0.5s;
+}
+.contacts .avatar {
+    margin: 0;
+    padding-right:1em;
+}
+.contacts .avatar img {
+    height: 3em;
+}
+.contacts .avatar .status {
+    width: 0.4em;
+    height: 0.4em;
+    display: inline-block; 
+    border-radius: 0.4em;
+    margin-left:-1em
+
+}
+.contacts .info > span{
+    display:table-row;
+}
+.contacts .action{
+    padding:0 3em;
+}
+.contacts .action  a.add{
+    text-decoration:none;
+    background-color: #111;
+    color:#ddd;
+    display:block;
+    width:2em;
+    height:2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em ;
+}
+.contacts .action  a.add:hover{
+    background-color: #151515;
+    color:white;
+    
+}
+.contacts .add-details a{
+    text-decoration: none;
+    color:white;
+    font-size:1em;
+    padding:0 .25em;
+}
+
+.contacts .add-details > div{
+    /*display:none;*/
+    white-space:nowrap;
+    /*background-color: #fff;*/
+    width:0;
+    transition: 1s;
+    overflow: hidden;
+    
+}
+.contacts li:target .add-details > div{
+    /*display:table-cell;*/
+
+    width:100%;
+ 
+}
+.contacts li:target > *{
+    transform:translateX(-15em);
+    
+}
+.contacts .action-right{
+    padding:0 .45em;
+}
+.contacts .action-right a.show{
+    text-decoration:none;
+    background-color: #111;
+    color:#ddd;
+    display:block;
+    width:2em;
+    height:2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em ;
+}
+.contacts .action-right  a.show:hover{
+    background-color: #151515;
+    color:white;
+    
+}
+.contacts .details a{
+    text-decoration: none;
+    color:white;
+    font-size:1em;
+    padding:0 .25em;
+}
+
+.contacts .slider{
+    white-space:nowrap;;
+    width:0;
+    transition: 1s;
+    overflow: hidden;
+
+}
+.slider.closed {
+	max-height: 0;
+}
+.contacts ul:target .details > div{
+    /*display:table-cell;*/
+    width:100%;
+}
+.contacts ul:target > *{
+    transform:translateX(1em);
+    
+}
+
+
+
+
+
+
+
+.status.off {
+    border: 1px solid #777;
+    background-color: #444;
+}
+.status.on {
+    border: 1px solid lightgreen;
+    background-color:green;
+}
+
