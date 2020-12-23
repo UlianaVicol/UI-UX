@@ -108,15 +108,13 @@ body {
     padding:0 .25em;
 }
 
-.contacts .slider{
-    white-space:nowrap;;
+.contacts .details > div{
+    /*display:none;*/
+    white-space:nowrap;
+    /*background-color: #fff;*/
     width:0;
     transition: 1s;
-    overflow: hidden;
-
-}
-.slider.closed {
-	max-height: 0;
+    overflow: hidden; 
 }
 .contacts ul:target .details > div{
     /*display:table-cell;*/
@@ -126,12 +124,6 @@ body {
     transform:translateX(1em);
     
 }
-
-
-
-
-
-
 
 .status.off {
     border: 1px solid #777;
