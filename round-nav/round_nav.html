@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Round Nav | :target</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+       body {
+            background-color: #333;
+            color:white
+        }
+        a {
+            color:white
+        }
+        .round {
+            width: 200px;
+            height: 200px;
+            background-color: #111;
+            border-radius: 100%;
+            padding:5px;
+        }
+        .round a {
+            /* background-color: orange; */
+            display: block;
+            font-size: 12px;
+            height: 10px;
+            /* border: 1px solid black; */
+            margin-bottom: -22px;
+            padding: 5px;
+
+        }
+        .round a:nth-child(4){
+   
+            transform: translateY(94px) rotate(-135deg);
+        }
+        .round a:nth-child(3){
+
+            transform: translateY(94px) rotate(-180deg);
+        }
+        .round a:nth-child(2){
+
+            transform: translateY(94px) rotate(-225deg);
+        }
+        .round a:nth-child(1){
+            transform: translateY(94px) rotate(-270deg);
+  }
+        .round a:nth-child(1) .fa-facebook-square{
+            transform: rotate(270deg);
+        }
+        .round a:nth-child(2) .fa-instagram{
+            transform: rotate(225deg);
+        }
+        .round a:nth-child(3) .fa-twitter{
+            transform: rotate(180deg);
+        }
+        .round a:nth-child(4) .fa-pinterest-square{
+            transform: rotate(135deg);
+        }
+        .round #first {
+            /*background-color: #222; */
+            width: 150px;
+            height: 150px;
+            transform: translateX(25px) translateY(34px);
+            border-radius: 100%;
+        }
+        .round .indicator {
+           width: 200px;
+           height: 10px;
+           /* background-color: green; */
+           margin-left: -25px;
+           transform: translateY(72px) rotate(-270deg);
+        }
+
+        #second:target .indicator {
+            transform: translateY(72px) rotate(-225deg);
+        }
+        #third:target .indicator {
+            transform: translateY(74px) rotate(-180deg);
+        }
+        #fourth:target .indicator {
+            transform: translateY(72px) rotate(-135deg);
+        }
+        .fa-angle-double-left{
+            font-size: small;
+            vertical-align: top;
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="round">
+        <a href="#first"><i class="fab fa-facebook-square"></i></a>
+        <a href="#second"><i class="fab fa-instagram"></i></a>
+        <a href="#third"><i class="fab fa-twitter"></i></a>
+        <a href="#fourth"><i class="fab fa-pinterest-square"></i></a>
+        <div id="first">
+            <div id="second">
+                <div id="third">
+                    <div id="fourth">
+                        <div class="indicator">
+                            <i class="fas fa-angle-double-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
