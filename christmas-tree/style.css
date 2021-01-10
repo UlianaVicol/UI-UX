@@ -1,0 +1,252 @@
+body{
+    background-color: #223;
+    color:white;
+    font-family: Arial;
+}
+h1,h2{
+    margin:0;
+    font-weight: 100;
+    text-align: center;
+}
+.tree > div{
+    font-size:0;
+}
+.tree {
+    width: 400px;
+    height: 700px;
+    border:1px solid #555;
+    /*margin:20px auto;*/
+    transform: translateX(70%);/* Am folosit transform*/
+    padding-top:50px;
+    display: inline-block;
+    
+    }
+.tree>:nth-child(5){
+    border-bottom:150px solid green;
+    border-left:150px solid transparent;
+    border-right:150px solid transparent;
+    position:relative;
+
+}
+.tree>:nth-child(4){
+    margin:0 70px;
+    border-bottom:100px solid green;
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+
+
+}
+.tree>:nth-child(3){
+    margin:0 100px;
+    border-bottom:80px solid green;
+    border-left:80px solid transparent;
+    border-right:80px solid transparent;
+
+}
+.tree>:nth-child(2){
+    margin:0 130px;
+    border-bottom:60px solid green;
+    border-left:60px solid transparent;
+    border-right:60px solid transparent;
+}
+/* ultimul*/
+.tree>:nth-child(1){
+    margin:0 160px;
+    border-bottom:40px solid green;
+    border-left:40px solid transparent;
+    border-right:40px solid transparent;
+
+}
+.tree .ball{
+    width: 20px;
+    height:20px;
+    background-image: radial-gradient(white,DarkGoldenRod);
+    position:absolute;
+    border-radius:100%;
+    animation: light-slow 3s infinite;
+
+}
+@keyframes light-slow{
+	0%,100%{
+        transform: scale(1);
+    }
+	50%{
+        transform: scale(1.5);
+    }
+}
+.tree>:nth-child(3)>.ball:nth-child(1){
+    display:none;
+}
+.tree>:nth-child(3)>.ball:nth-child(2){
+    top: 115px;
+    right:190px;
+    animation-delay: 3.1s;
+}
+.tree>:nth-child(3)>.ball:nth-child(3){
+    top: 127px;
+    left:150px;
+    animation-delay: 2.1s;
+}
+.tree>:nth-child(3)>.ball:nth-child(4){
+    top: 127px;
+    right:150px;
+    animation-delay: 3.4s;
+}
+.tree>:nth-child(4)>.ball:nth-child(1){
+    top: 190px;
+    left:160px;
+    animation-delay: 2.5s;
+}
+.tree>:nth-child(4)>.ball:nth-child(2){
+    top: 190px;
+    right:160px;
+    animation-delay: 1.5s;
+}
+.tree>:nth-child(4)>.ball:nth-child(3){
+    top: 205px;
+    left:120px;
+    animation-delay: 3.1s;
+}
+.tree>:nth-child(4)>.ball:nth-child(4){
+    top: 205px;
+    right:120px;
+    animation-delay: 2.1s;
+}
+.tree>:nth-child(5)>.ball:nth-child(1){
+    top: -25px;
+    right:40px;
+    animation-delay: 3.4s;
+}
+.tree>:nth-child(5)>.ball:nth-child(2){
+    top: -45px;
+    left:90px;
+    animation-delay: 2.5s;
+}
+.tree>:nth-child(5)>.ball:nth-child(3){
+    top: -45px;
+    right:90px;
+    animation-delay: 1.5s;
+}
+.tree>:nth-child(5)>.ball:nth-child(4){
+    top: -25px;
+    left:135px;
+    animation-delay: 3.1s;
+}
+.tree>:nth-child(5)>.ball:nth-child(5){
+    top: -25px;
+    right:135px;
+    animation-delay: 3.1s;
+}
+.tree>:nth-child(6)>.ball:nth-child(1){
+    top: 450px;
+    left:225px;
+    animation-delay: 2.1s;
+}
+.tree>:nth-child(6)>.ball:nth-child(2){
+    top: 450px;
+    right:225px;
+    animation-delay: 3.4s;
+}
+.tree>:nth-child(6)>.ball:nth-child(3){
+    top: 430px;
+    left:290px;
+    animation-delay: 2.5s;
+}
+.tree>:nth-child(6)>.ball:nth-child(4){
+    top: 430px;
+    right:290px;
+    animation-delay: 1.5s;
+}
+.tree>:nth-child(6)>.ball:nth-child(5){
+    top: 450px;
+    left:350px;
+    animation-delay: 3.1s;
+}
+.tree>:nth-child(6)>.ball:nth-child(6){
+    top: 450px;
+    right:350px;
+    animation-delay: 2.1s;
+}
+.tree .lights{
+    width: 25px;
+    height:25px;
+    background-color:gray;
+    transform:rotate(45deg);
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.tree .lights:nth-child(4){
+    transform: rotate(90deg);
+    animation-delay: 3.1;
+}
+.tree .lights:nth-child(6){
+    transform:rotate(90deg);
+    animation-delay: 3.1;
+}
+.tree:target .lights{
+    /*background-color: cyan;*/
+    animation:ease-flash 1s ease-out infinite alternate;
+}
+@keyframes ease-flash{
+    0%{
+        background: cyan;
+    }
+   25%{
+        background-color: Yellow;
+    }
+    50%{
+        background-color: Violet;
+    }
+    75%{
+        background-color: grey;
+    }
+    100%{
+        background-color: cyan;
+    }
+}
+.tree .on-switch{
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding:5px;
+    position:relative;
+    left:130px
+}
+.tree .star{
+    width: 40px;
+    height:40px;
+    background-color:gray;
+    transform:rotate(45deg);
+    position:absolute;
+    top: 30px;
+    z-index: 10;
+    left: 180px;
+    animation: starLight 0.5s ease-out infinite alternate;
+
+}
+.tree .star:nth-child(2){
+    transform:rotate(90deg);
+}
+@keyframes starLight {
+    0%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 42%, rgba(255, 242, 173, 0.2) 58%, rgba(255, 255, 255, 0.1) 100%);}
+    15%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 41%, rgba(255, 242, 173, 0.2) 59%, rgba(255, 255, 255, 0.1) 100%);}
+    25%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 40%, rgba(255, 242, 173, 0.2) 60%, rgba(255, 255, 255, 0.1) 100%);}
+    35%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 39%, rgba(255, 242, 173, 0.2) 61%, rgba(255, 255, 255, 0.1) 100%);}
+    50%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 38%, rgba(255, 242, 173, 0.2) 62%, rgba(255, 255, 255, 0.1) 100%);}
+    65% {
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 37%, rgba(255, 242, 173, 0.2) 63%, rgba(255, 255, 255, 0.1) 100%);}
+    75%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 36%, rgba(255, 242, 173, 0.2) 64%, rgba(255, 255, 255, 0.1) 100%);}
+    85%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 35%, rgba(255, 242, 173, 0.2) 65%, rgba(255, 255, 255, 0.1) 100%);}
+    100%{
+     background: radial-gradient(ellipse at center, gold 0%, rgba(255, 240, 158, 0.5) 34%, rgba(255, 242, 173, 0.2) 66%, rgba(255, 255, 255, 0.1) 100%);}
+   }

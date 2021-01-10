@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>CSS Exemple</h1>
+    <h2>With Document Flow</h2>
+    <h2>With Position</h2>
+    <h2>With Pseudo-States</h2>
+    <h2>Withh Effects</h2>
+    <div class="tree" id="l-1">
+        <div >
+            <div class="star"></div>
+            <div class="star"></div>
+        </div> 
+        <div></div>
+        <div>
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+            <div class="ball">4</div>
+            <div class="lights"></div>
+            <div class="lights"></div>
+        </div>
+        <div>
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+            <div class="ball">4</div>
+            <div class="lights"></div>
+            <div class="lights"></div>
+        </div>
+        <div><!-- parent:4 / static+flow-->
+            <div class="ball">1</div><!--child:1/absolute-flow-->
+            <div class="ball">2</div><!--child:2/absolute-flow-->
+            <div class="ball">3</div>
+            <div class="ball">4</div>
+            <div class="ball">5</div>
+        </div>
+        <div>
+            <div class="ball">1</div>
+            <div class="ball">2</div>
+            <div class="ball">3</div>
+            <div class="ball">4</div>
+            <div class="ball">5</div>
+            <div class="ball">6</div>
+        </div>
+        <a href="#l-1" class="on-switch">ON</a>
+        <a href="#" class="on-switch">OFF</a>
+    </div>
+
+</body>
+</html>
