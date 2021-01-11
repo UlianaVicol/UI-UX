@@ -16,7 +16,7 @@ h1,h2{
     height: 700px;
     border:1px solid #555;
     /*margin:20px auto;*/
-    transform: translateX(70%);/* Am folosit transform*/
+    transform: translateX(70%);/* Am folosit transform:translate, putem si text-align:center lui body de scris si se afiseaza toate spre centru*/
     padding-top:50px;
     display: inline-block;
     
