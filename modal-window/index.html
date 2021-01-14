@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal window: pseudo + position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HW1: S-a folosit elementul <main> pentru ca este conținutul principal al documentului a lui <body>.
+        In tagul <main> se desfasoara tema de baza a docuentului.-->
+        
+
+    <main id="content">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas suscipit eum, recusandae voluptate amet vel excepturi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat itaque amet voluptatibus voluptate asperiores minus, corrupti perferendis voluptates nesciunt ipsa quod fugiat molestiae pariatur dolores nihil officia, totam magnam necessitatibus iure eum. Perspiciatis, aliquam quae optio consectetur necessitatibus quibusdam porro quisquam odio eveniet inventore sapiente consequatur commodi. Debitis, delectus laborum!</p>
+        <p>Eius accusamus provident, quaerat qui, nostrum quae pariatur suscipit earum dolor dignissimos dolorem delectus expedita corporis. Impedit eveniet animi quisquam tempore, quasi error officiis soluta omnis nam mollitia alias aliquam, velit ea iste voluptatum esse molestias maiores rerum delectus tempora veritatis. Saepe libero modi optio quia ad. Doloribus, illo iusto.</p>
+        <p>Ipsa porro adipisci tenetur perspiciatis asperiores nihil neque nostrum aperiam laboriosam soluta id eius, explicabo dignissimos repellat facilis deserunt, eligendi laudantium beatae repellendus a autem quas reprehenderit ratione! Distinctio commodi fugit culpa sapiente neque impedit quaerat, dignissimos explicabo, tempora officiis earum. Quam molestiae quo ad, tenetur corrupti repellat suscipit similique.</p>
+        <p class="ad">
+            To benefit from it HIT  <a href="#modal" class="btn">THIS BUTTON</a>
+        </p>
+    </main>
+    <div id="modal">
+        <!--HW2: Intr-un document html trebuie sa fie doar un H1
+            In div-ul dat punem H2  si H3  iar pentru ca sa arate mai bine textul 
+            le putem stiliza prin css -->
+        <h2>Apply for this product!</h2>
+        <h3>In order to apply fill in the blank</h3>
+        <form action="page-thankyou.html" target="blank">
+            <label>
+                <input type="text" placeholder="Full Name" required>
+            </label>
+            <label><select name="prefix" id="select">
+                    <option value="MD">+373</option>
+                    <option value="UK">+44</option>
+                </select></label>
+                <label><input type="text" placeholder="phone:123/456789" required>
+            </label>
+            <label>
+                <input type="text" placeholder="email:john@something.example">
+            </label>
+
+            <button>APPLY!!!</button>
+        </form>
+        <a href="#">X</a>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>

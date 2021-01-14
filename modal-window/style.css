@@ -1,0 +1,93 @@
+body{
+    font-family: Arial;
+    background-color: #223;
+    color:white;
+}
+#content{
+    width:90%;
+    margin:20% auto;
+}
+#content{
+    text-align: justify;
+}
+#content .ad{
+    font-size:150%;
+    margin:5% 0;
+    text-align: right;
+}
+#content .ad a{
+    background-color: orange;
+    padding:1em;
+    text-decoration: none;
+    margin-left:1.5em;
+    animation: effect-shadow 1s infinite;
+
+}
+@keyframes effect-shadow
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(124, 123, 123, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+  }
+}
+
+/*Modal Window*/
+#modal{
+    background-color: #678;
+    padding:5%;
+
+    display: none;
+    position:fixed;
+
+    top:30%;
+    left:25%;
+    right:25%;
+    z-index:1;
+}
+#modal:target{
+    display: block;
+}
+#modal input{
+    padding:3%;
+    width: 80%;
+}
+#modal button{
+    padding:3%;
+    width: 86.5%;
+}
+#modal a{
+    color:white;
+    text-decoration: none;
+    font-size:200%;
+    position:absolute;
+    right:1em;
+    top:0.8em;
+}
+#modal a:hover{
+    transform: scale(1.1);
+}
+#modal:target+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: #000A;
+}
+#modal #select{
+    background-color: #678;
+    color:white;
+    position:absolute;
+    width: 4em;
+    height: 5em;
+    left:3em;
+    top:20em;
+    cursor:pointer
+}
+
+#modal button:hover{
+    background-color: LightGray;
+
+}
