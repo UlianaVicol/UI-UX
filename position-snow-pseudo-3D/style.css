@@ -1,0 +1,265 @@
+/*
+    position
+    animation
+    background
+    filter
+    transform
+    gradient
+*/
+html{
+}
+body{
+    margin:0;
+    overflow:hidden;
+}
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    background-image: url(images/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+    background-position:60% bottom;
+    animation: day-and-night 12s infinite;
+}
+.night{
+    position:absolute;
+    top:50px;
+    left:50%;
+    width:100px;
+    height:100px;
+    margin-left:-100px;
+    animation-name: moon-anim;
+    animation-duration: 12s;
+    animation-timing-function: 5s linear;
+    animation-iteration-count: infinite;
+  }
+.moon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #EFEFEF;
+    box-shadow:0 10px 50px #FFFFFF;
+    shadow:30 30px 50px #FFFFFF;
+    box-shadow: 0 10px 50px #FFFFFF;
+    border-radius: 100px;
+}
+.window-fire{
+    width: 6%;
+    height: 10%;
+    background-image: radial-gradient(darkorange, transparent);
+    position:absolute;
+    top:59%;
+    left: 46%;
+    border-radius:25%;
+    transform:rotateY(-50deg);
+    mix-blend-mode: soft-light;
+    animation:burn 2s infinite;
+}
+.snow{
+    /* background-color: blue;*/
+     position:absolute;
+     width: 100%;
+     height: 98%;
+     animation: day-and-night 12s infinite;
+ }
+ .snow .flake{
+     position:absolute;
+     top:-2%;
+     width: 20px;
+     height: 20px;
+     /*background-color: white;*/
+     border-radius:100%;
+     background-image: radial-gradient(white,transparent); 
+ }
+ .snow .flake:nth-child(1){
+     
+     animation-delay: 1s;
+     animation-direction: reverse;
+ }
+ .snow .flake:nth-child(3n){
+     animation: flake-anim-1 12s infinite linear;
+     animation-timing-function: linear;
+     animation-fill-mode: forwards;
+ }
+ .snow .flake:nth-child(2n){
+     animation: flake-anim-2 12s infinite linear;
+ }
+ .snow .flake.small{
+     width: 12px;
+     height: 12px;
+     animation-duration:30s;
+ }
+ .snow .flake:nth-child(1){
+     left:5%;
+     animation-delay: 6.5s;
+ }
+ .snow .flake:nth-child(2){
+     left:15%;
+     animation-delay: 5s;
+ }
+ .snow .flake:nth-child(3){
+     left:23%;
+     animation-delay: 1.2s;
+ }
+ .snow .flake:nth-child(4){
+     left:25%;
+     animation-delay: 8s;
+ }
+ .snow .flake:nth-child(5){
+     left:38%;
+     animation-delay:3.5s;
+ }
+ .snow .flake:nth-child(6){
+     left:45%;
+     animation-delay: 1.5s;
+ }
+ .snow .flake:nth-child(7){
+     left:58%;
+     animation-delay: 3.9s;
+ }
+ .snow .flake:nth-child(8){
+     left:66%;
+     animation-delay: 15s;
+ }
+ .snow .flake:nth-child(9){
+     left:80%;
+     animation-delay: 2.9s;
+ }
+ .snow .flake:nth-child(10){
+     left:95%;
+     animation-delay: 0.2s;
+ }
+ 
+ .snow .flake.small:nth-child(11){
+     left:50%;
+     animation-delay:0.5s;
+ }
+ .snow .flake.small:nth-child(12){
+     left:30%;
+     animation-delay: 4.9s;
+ }
+ .snow .flake.small:nth-child(13){
+     left:83%;
+     animation-delay: 9.5s;
+ }
+ .snow .flake.small:nth-child(14){
+     left:3%;
+     animation-delay: 6s;
+ }
+ .snow .flake.small:nth-child(15){
+     left:22%;
+     animation-delay:14s;
+ }
+ .snow .flake.small:nth-child(16){
+     left:65%;
+     animation-delay: 8s;
+ }
+ .snow .flake.small:nth-child(17){
+     left:77%;
+     animation-delay: 16s;
+ }
+ .snow .flake.small:nth-child(18){
+     left:15%;
+     animation-delay: 11s;
+ }
+ .snow .flake.small:nth-child(19){
+     left:10%;
+     animation-delay: 2.8s;
+ }
+ .snow .flake.small:nth-child(20){
+     left:60%;
+     animation-delay: 10s;
+ }
+ @keyframes burn{
+    0%{
+        opacity:0.6;
+    }
+    20%{
+        opacity:0.8;
+    }
+    21%{
+        opacity:0.8;
+    }
+    50%{
+        opacity:0.9;
+    }
+    70%{
+        opacity:0.65;
+    }
+    75%{
+        opacity:0.6;
+    }
+    100%{
+        opacity:0.15;
+    }
+}
+ @keyframes flake-anim-1{
+    from{
+        top:-2%;
+        opacity:1;
+    }
+    50%{
+        top:100%;
+    }
+    to{   
+        top:100%;
+        opacity:0;
+    }
+}
+@keyframes flake-anim-2{
+    from{
+        top:-2%;
+        opacity:1;
+    }
+    55%{
+        top:95%;
+    }
+    to{
+        top:100%;
+        opacity:0;
+    }
+}
+@keyframes day-and-night{
+    from{
+        filter:grayscale(0%) brightness(120%);
+    }
+    50%{
+        filter:grayscale(80%) brightness(30%);
+    }
+    to{
+        filter:grayscale(0%) brightness(120%);
+    }
+}
+@keyframes moon-anim {
+    0% {
+      top:220px;
+      left:20%;
+      opacity:0;
+  }
+    30% {
+      top:90px;
+      left:50%;
+      opacity:1;
+  }
+    50% {
+      top:90px;
+      left:50%;
+      opacity:1;
+  }
+    70% {
+      top:90px;
+      left:50%;
+      opacity:1;
+  }
+    100% {
+      top:140px;
+      left:60%;
+      opacity:0;
+  }
+}
