@@ -1,0 +1,68 @@
+body{
+    background-color: #333;
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*LAYOUT*/
+.origin{
+    width: 0px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+.origin .film{
+    /*background-size: radial-graadient(transparent 49%, black 51%);
+    background-size:20px 30px;*/
+
+    /*HW2: border-image:
+        S-ar putea si asa varianta )
+        
+        border: 10px dashed white;
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+    */
+    background-color: black;
+    border:30px solid white;
+    border-image: url('images/dot.png');
+    border-image-slice: 33% 33%;
+    border-image-repeat: round;
+    width: 5000px;
+    font-size:0;
+    position: relative;
+    left: -33vw;
+    top: -178px;
+}
+.origin .film li{
+    display:inline-block;
+    padding: 1vh 1vw;
+}
+.origin .film li img{
+   /* opacity:0;*/
+    /*HW1: use visibility ---> opacity:0*/
+    /*visibility:hidden;*/
+}
+.v-guide{
+    position: absolute;
+    height: 100vh;
+    top:-50vh;
+    left: 0;
+
+    width: 1px;
+    background-color: #555;
+}
+.h-guide{
+    position: absolute;
+    width: 100vw;
+    top:0;
+    left:-33vw;
+    height: 1px;
+    background-color: #555;
+}
