@@ -23,7 +23,7 @@ ul{
 
     /*HW2: border-image:
         S-ar putea si asa varianta )
-        
+    
         border: 10px dashed white;
         padding: 15px;
         background-repeat: no-repeat;
@@ -31,7 +31,6 @@ ul{
     */
     background-color: black;
     border:30px solid white;
-   /*  border-image-source: linear-gradient(transparent 49%, bottom black 51%); border-width:15px; border:30px si restul, apare bordura numai ca culoarea neagra ))*/
     border-image-source: url('images/dot.png');
     border-image-slice: 33% 33%;
     border-image-repeat: round;
