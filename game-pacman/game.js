@@ -53,7 +53,7 @@ renderMap()
 // 1: limita pentru deplasare 
 // 2: adaugare bomba(-20), viata(0...100) 
 // 3: coin_state, bomb_state - pentru afisare 
-// 4: adaugarea mai multor bombe si bani - OK
+// 4: adaugarea mai multor bombe si bani - 
 // 5: coordonate aleatorii (parseInt(1+Math.random()*9)) 
 
 
