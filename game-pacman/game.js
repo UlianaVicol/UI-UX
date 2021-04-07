@@ -50,26 +50,11 @@ function renderMap(){
 }
 renderMap()
 
-// 1: limita pentru deplasare - OK
-// 2: adaugare bomba(-20), viata(0...100) - OK
-// 3: coin_state, bomb_state - pentru afisare - OK
+// 1: limita pentru deplasare 
+// 2: adaugare bomba(-20), viata(0...100) 
+// 3: coin_state, bomb_state - pentru afisare 
 // 4: adaugarea mai multor bombe si bani - OK
-// 5: coordonate aleatorii (parseInt(1+Math.random()*9)) - OK
+// 5: coordonate aleatorii (parseInt(1+Math.random()*9)) 
 
 
 
-
-
-
-
-
-
-// HW1: a) add limits (1,10) to pacman movement  - adaugati limite aceeasi chestie ca si data trecuta(1,10) limita hartii
-//      b) add bomb, ad hp (health points) 0...100- adaugati bomba, respectiv hp si logica pentru bomba ca sasi piarda punctele din viata 0..100 fiecare  bomba ii scade (-20 unitati) si sa afisam jos cite vieti are
-//      c) add coin_state, bomb_state  -  adaugati 2 variabile numite coin_state si bomb_state - false/true care vor tine minte starea monedei sau starea bombei (ex cind ea se duce si culege moneda ea deja nu mai apare pe ecran trece in alta stare fals)
-// aceste variabile trebuie schimbate ca urmare la movement miscare cind calca pe ea se schimba la starea din true in false
-// dar ele trebuie sa influienteze aceste variabile (coin_state si bomb_state)> functia renderMap()
-
-// HW4 *: add more coins & bombscear fi daca ar exista 2-3 coins si 2- bombe
-// HW5*:  add random coords - ar fi bine de adaugat aliatoriu ca moneda sa apara pe o alta patratica sau in alta sus sau in jos sau in stinga dreapta nu conteaza
-// ori cu functia 1+ Math.random() * 9 sau cu parseInt(1+ Math.random() * 9)
